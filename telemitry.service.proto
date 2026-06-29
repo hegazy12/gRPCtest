@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRPCtest";
+
+import "google/protobuf/timestamp.proto";
+
+package telemetry;
+
+service TelemetryService {
+  rpc TrackMetric (MetricRequest) returns (MetricResponse);
+  rpc StreamMetrics (stream MetricRequest) returns (MetricResponse);
+}
+
+message MetricRequest {
+  string metric_name = 1;
+  double value = 2;
+  int64 timestamp = 3; 
+  map<string, string> tags = 4; 
+  google.protobuf.Timestamp stamp = 5; // Fixed slashes to dots, and type capitalization
+}
+
+message MetricResponse {
+  bool success = 1;
+  string message = 2;
+}
