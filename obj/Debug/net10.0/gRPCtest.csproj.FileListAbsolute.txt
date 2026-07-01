@@ -38,3 +38,4 @@
 /home/abdo/dotnetproject/gRPCtest/bin/Debug/net10.0/Grpc.Net.Client.dll
 /home/abdo/dotnetproject/gRPCtest/bin/Debug/net10.0/Grpc.Net.ClientFactory.dll
 /home/abdo/dotnetproject/gRPCtest/bin/Debug/net10.0/Grpc.Net.Common.dll
+/home/abdo/dotnetproject/gRPCtest/obj/Debug/net10.0/gRPCtest.sourcelink.json
