@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/abdo/dotnetproject/gRPCtest/gRPCtest.csproj": {}
+    "/home/abdo/dotnetproject/grpcproject/gRPCtest/gRPCtest.csproj": {}
   },
   "projects": {
-    "/home/abdo/dotnetproject/gRPCtest/gRPCtest.csproj": {
+    "/home/abdo/dotnetproject/grpcproject/gRPCtest/gRPCtest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/abdo/dotnetproject/gRPCtest/gRPCtest.csproj",
+        "projectUniqueName": "/home/abdo/dotnetproject/grpcproject/gRPCtest/gRPCtest.csproj",
         "projectName": "gRPCtest",
-        "projectPath": "/home/abdo/dotnetproject/gRPCtest/gRPCtest.csproj",
+        "projectPath": "/home/abdo/dotnetproject/grpcproject/gRPCtest/gRPCtest.csproj",
         "packagesPath": "/home/abdo/.nuget/packages/",
-        "outputPath": "/home/abdo/dotnetproject/gRPCtest/obj/",
+        "outputPath": "/home/abdo/dotnetproject/grpcproject/gRPCtest/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/abdo/.nuget/NuGet/NuGet.Config"

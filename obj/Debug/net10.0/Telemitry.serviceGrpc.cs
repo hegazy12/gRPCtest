@@ -60,7 +60,7 @@ namespace gRPCtest {
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::gRPCtest.MetricRequest, global::gRPCtest.MetricResponse> __Method_StreamMetrics = new grpc::Method<global::gRPCtest.MetricRequest, global::gRPCtest.MetricResponse>(
-        grpc::MethodType.ClientStreaming,
+        grpc::MethodType.DuplexStreaming,
         __ServiceName,
         "StreamMetrics",
         __Marshaller_telemetry_MetricRequest,
@@ -83,7 +83,7 @@ namespace gRPCtest {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::gRPCtest.MetricResponse> StreamMetrics(grpc::IAsyncStreamReader<global::gRPCtest.MetricRequest> requestStream, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task StreamMetrics(grpc::IAsyncStreamReader<global::gRPCtest.MetricRequest> requestStream, grpc::IServerStreamWriter<global::gRPCtest.MetricResponse> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -138,14 +138,14 @@ namespace gRPCtest {
         return CallInvoker.AsyncUnaryCall(__Method_TrackMetric, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncClientStreamingCall<global::gRPCtest.MetricRequest, global::gRPCtest.MetricResponse> StreamMetrics(grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncDuplexStreamingCall<global::gRPCtest.MetricRequest, global::gRPCtest.MetricResponse> StreamMetrics(grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return StreamMetrics(new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncClientStreamingCall<global::gRPCtest.MetricRequest, global::gRPCtest.MetricResponse> StreamMetrics(grpc::CallOptions options)
+      public virtual grpc::AsyncDuplexStreamingCall<global::gRPCtest.MetricRequest, global::gRPCtest.MetricResponse> StreamMetrics(grpc::CallOptions options)
       {
-        return CallInvoker.AsyncClientStreamingCall(__Method_StreamMetrics, null, options);
+        return CallInvoker.AsyncDuplexStreamingCall(__Method_StreamMetrics, null, options);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -173,7 +173,7 @@ namespace gRPCtest {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, TelemetryServiceBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_TrackMetric, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::gRPCtest.MetricRequest, global::gRPCtest.MetricResponse>(serviceImpl.TrackMetric));
-      serviceBinder.AddMethod(__Method_StreamMetrics, serviceImpl == null ? null : new grpc::ClientStreamingServerMethod<global::gRPCtest.MetricRequest, global::gRPCtest.MetricResponse>(serviceImpl.StreamMetrics));
+      serviceBinder.AddMethod(__Method_StreamMetrics, serviceImpl == null ? null : new grpc::DuplexStreamingServerMethod<global::gRPCtest.MetricRequest, global::gRPCtest.MetricResponse>(serviceImpl.StreamMetrics));
     }
 
   }

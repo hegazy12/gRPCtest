@@ -8,7 +8,7 @@ package telemetry;
 
 service TelemetryService {
   rpc TrackMetric (MetricRequest) returns (MetricResponse);
-  rpc StreamMetrics (stream MetricRequest) returns (MetricResponse);
+  rpc StreamMetrics (stream MetricRequest) returns (stream MetricResponse);
 }
 
 message MetricRequest {

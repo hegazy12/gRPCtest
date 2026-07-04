@@ -465,11 +465,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/abdo/dotnetproject/gRPCtest/gRPCtest.csproj",
+      "projectUniqueName": "/home/abdo/dotnetproject/grpcproject/gRPCtest/gRPCtest.csproj",
       "projectName": "gRPCtest",
-      "projectPath": "/home/abdo/dotnetproject/gRPCtest/gRPCtest.csproj",
+      "projectPath": "/home/abdo/dotnetproject/grpcproject/gRPCtest/gRPCtest.csproj",
       "packagesPath": "/home/abdo/.nuget/packages/",
-      "outputPath": "/home/abdo/dotnetproject/gRPCtest/obj/",
+      "outputPath": "/home/abdo/dotnetproject/grpcproject/gRPCtest/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/abdo/.nuget/NuGet/NuGet.Config"
@@ -963,5 +963,17 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.OpenApi' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
+      "libraryId": "Microsoft.OpenApi",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }
